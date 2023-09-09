@@ -3,7 +3,7 @@ import Paragrafo from '../Paragraph'
 import Title from '../Title'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Card, LinkBotao } from './styles'
+import { Card, Container, LinkBotao } from './styles'
 
 export interface Repositorio {
   id: number;
@@ -49,6 +49,7 @@ const Projeto = () => {
 
   return (
     <>
+        <Container>
       {carregando ? (
         <h1>Carregando...</h1>
       ) : (
@@ -61,7 +62,8 @@ const Projeto = () => {
             <LinkBotao target='_black' href={repositorio.html_url}>Visualizar</LinkBotao>
           </Card>
         ))
-      )}
+        )}
+        </Container>
       {deuErro}
     </>
   )

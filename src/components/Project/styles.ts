@@ -5,6 +5,12 @@ export const Card = styled.div`
   padding: 16px;
 `
 
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+`
+
 export const LinkBotao = styled.a`
   color: ${(props) => props.theme.corDeFundo};
   font-size: 14px;
