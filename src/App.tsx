@@ -7,7 +7,7 @@ import Projetos from './Containers/Projects'
 import temaLight from './themes/light'
 
 import temaDark from './themes/dark'
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 
 function App() {
   const [estaUsandoTemaDark, setTemaDark] = useState(false)
