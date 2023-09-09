@@ -18,7 +18,7 @@ const Projeto = () => {
   const [deuErro, setDeuErro] = useState(false);
 
   useEffect(() => {
-    AOS.init(); // Inicializa o AOS
+    AOS.init();
   }, []);
 
 
