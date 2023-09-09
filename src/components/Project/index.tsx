@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Paragrafo from '../Paragraph'
 import Title from '../Title'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Card, LinkBotao } from './styles'
 
 export interface Repositorio {
@@ -15,6 +16,11 @@ const Projeto = () => {
   const [repos, setRepos] = useState<Repositorio[]>([]);
   const [carregando, setCarregando] = useState(true);
   const [deuErro, setDeuErro] = useState(false);
+
+  useEffect(() => {
+    AOS.init(); // Inicializa o AOS
+  }, []);
+
 
   useEffect(() => {
     setCarregando(true);
@@ -47,7 +53,7 @@ const Projeto = () => {
         <h1>Carregando...</h1>
       ) : (
         repos.map((repositorio) => (
-          <Card key={repositorio.id}>
+          <Card key={repositorio.id} data-aos="fade-up">
             <Title>{repositorio.name}</Title>
             <Paragrafo tipo="secundario">
               {repositorio.language}
