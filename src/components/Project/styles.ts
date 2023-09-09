@@ -1,14 +1,18 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
+max-width: 300px;
   border: 1px solid ${(porps) => porps.theme.corDaBorda};
   padding: 16px;
+  width: 100%;
 `
 
 export const Container = styled.div`
+  max-width: 840px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
@@ -16,6 +20,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 `
 

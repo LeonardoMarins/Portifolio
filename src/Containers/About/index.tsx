@@ -1,10 +1,10 @@
 import Title from '../../components/Title'
 import Paragrafo from '../../components/Paragraph'
-import { GithubSection } from './styles'
+import { GithubSection, Section } from './styles'
 
 const Sobre = () => {
   return (
-    <section>
+    <Section>
       <Title fontSize={16}>Sobre mim</Title>
 
       <Paragrafo tipo="secundario">
@@ -26,7 +26,7 @@ const Sobre = () => {
           <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeonardoMarins&layout=compact&langs_count=7&theme=dracula" />
         </GithubSection>
       </div>
-    </section>
+    </Section>
   )
 }
 

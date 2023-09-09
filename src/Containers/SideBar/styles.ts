@@ -1,6 +1,14 @@
 import { styled } from 'styled-components'
 import { P } from '../../components/Paragraph/styles'
 
+export const Container = styled.aside`
+@media (max-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+`
+
 export const Descricao = styled(P)`
   margin-top: 24px;
   margin-bottom: 40px;

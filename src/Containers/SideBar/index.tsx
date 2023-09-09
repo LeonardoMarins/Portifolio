@@ -2,7 +2,7 @@ import Avatar from '../../components/Avatar'
 import Paragrafo from '../../components/Paragraph'
 import Title from '../../components/Title'
 
-import { Descricao, BotaoTema, SidebarContainer } from './styles'
+import { Descricao, BotaoTema, SidebarContainer, Container } from './styles'
 
 type props = {
   trocaTema: () => void
@@ -11,7 +11,7 @@ type props = {
 const Sidebar = ({ trocaTema }: props) => {
   return (
     <>
-      <aside>
+      <Container>
         <SidebarContainer>
           <Avatar />
           <Title fontSize={20}>Leonardo Marins</Title>
@@ -23,7 +23,7 @@ const Sidebar = ({ trocaTema }: props) => {
           </Descricao>
           <BotaoTema onClick={trocaTema}>Trocar Temas</BotaoTema>
         </SidebarContainer>
-      </aside>
+      </Container>
     </>
   )
 }

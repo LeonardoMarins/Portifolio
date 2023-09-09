@@ -1,5 +1,7 @@
 import { styled } from 'styled-components'
 
+export const Section = styled.div``
+
 export const GithubSection = styled.div`
   margin-top: 32px;
   margin-bottom: 64px;
