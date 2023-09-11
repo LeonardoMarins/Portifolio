@@ -1,11 +1,20 @@
-import { styled } from 'styled-components'
+import styled from "styled-components";
 
-export const Lista = styled.ul`
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-    row-gap: 16px;
+  .titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
   }
+
+  `
+export const Avatar = styled.img`
+width: 160px;
+height: 160px;
 `
+

@@ -3,7 +3,6 @@ import { ThemeProvider } from 'styled-components'
 import Sidebar from '../src/Containers/SideBar'
 import EstiloGlobal, { Container } from './styles'
 import Sobre from './Containers/About'
-import Projetos from './Containers/Projects'
 import temaLight from './themes/light'
 
 import temaDark from './themes/dark'
@@ -23,7 +22,6 @@ function App() {
         <Sidebar trocaTema={trocaTema} />
         <main>
           <Sobre />
-          <Projetos />
         </main>
       </Container>
     </ThemeProvider>
