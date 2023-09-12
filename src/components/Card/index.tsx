@@ -8,11 +8,12 @@ export type Props = {
   tecnologia3: string,
   image: string,
   background: string,
-  button?: true
+  button?: true,
+  href?: string
 }
 
 
-const Card = ({descricao,nome,tecnologia1,tecnologia3,tecnologia2,image, background,button}:Props) => {
+const Card = ({descricao,nome,tecnologia1,tecnologia3,tecnologia2,image, background,button,href}:Props) => {
   return (
     <>
       <Container background={background}>
@@ -27,7 +28,7 @@ const Card = ({descricao,nome,tecnologia1,tecnologia3,tecnologia2,image, backgro
           <li>{tecnologia3}</li>
         </ul>
         {button ? (
-          <button>Ver projeto</button>
+          <a href={href}><button>Ver projeto</button></a>
         ): (
           ''
         )}

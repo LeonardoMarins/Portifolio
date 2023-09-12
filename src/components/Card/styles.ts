@@ -44,7 +44,7 @@ Omit<
   }
 
   p {
-    margin-top: -104px;
+    margin-top: -132px;
     margin-left: 8px;
     word-wrap: break-word;
     max-width: 36%;
@@ -57,15 +57,15 @@ Omit<
   }
   ul {
     display: flex;
-
-
+    padding: 8px;
     li {
       margin-right: 8px;
       list-style: none;
       font-family: 'Roboto', sans-serif;
       border: 1px solid #fff;
       padding: 5px;
-      background-color: #fff;
+      background-color: gray;
+      color: #fff;
     }
   }
 
