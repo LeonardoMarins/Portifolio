@@ -28,7 +28,7 @@ const Card = ({descricao,nome,tecnologia1,tecnologia3,tecnologia2,image, backgro
           <li>{tecnologia3}</li>
         </ul>
         {button ? (
-          <a href={href}><button>Ver projeto</button></a>
+          <a href={href} target="_blank"><button>Ver projeto &#128064;</button></a>
         ): (
           ''
         )}

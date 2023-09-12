@@ -69,10 +69,26 @@ Omit<
     }
   }
 
+
+
   button {
-    margin-bottom: 4px;
-    margin-left: 8px;
-    padding: 8px;
+    background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
+    margin: 10px;
+    padding: 8px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: block;
     cursor: pointer;
   }
+
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+
 `

@@ -7,12 +7,11 @@ export const Lista = styled.ul`
 
   li {
     margin-right: 16px;
-    border: 1px solid black;
     padding: 8px;
-    border-radius: 5%;
+    border-radius: 8%;
 
     &:hover {
-      background-color: black;
+      background: linear-gradient(to bottom left, #9A17E0, #00BFFF);
       transition: 1s;
     }
   }

@@ -1,3 +1,4 @@
+import Paragrafo from "../Paragraph"
 import { Links, Lista } from "./styles"
 
 
@@ -6,9 +7,9 @@ const NavBar = () => {
     <>
       <nav>
         <Lista>
-          <li><Links to={'/projetos'}>Projetos</Links></li>
-          <li><Links to={'/curriculo'}>Currículo</Links></li>
-          <li><Links to={'/experiencia'}>Experiência</Links></li>
+          <li><Links to={'/projetos'}><Paragrafo>Projetos</Paragrafo></Links></li>
+          <li><Links to={'/curriculo'}><Paragrafo>Currículo</Paragrafo></Links></li>
+          <li><a href="mailto:marins.dev@gmail.com"><Paragrafo>Contato</Paragrafo></a></li>
         </Lista>
       </nav>
     </>
