@@ -7,6 +7,7 @@ import { Avatar, ButtonGithub, Container, ContainerDiv, EstiloGlobals, Voltar } 
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+import github from '../../img/github.svg'
 
 
 const Projects = () => {
@@ -29,7 +30,7 @@ const Projects = () => {
       <Card href="https://eplay-gray.vercel.app/" button background="black" descricao='Desenvolvimento de um site de jogos do curso da EBAC onde tivemos que consumir uma API e montar o layout com um modal e um carrinho de compras utilizando o redux para gerenciamento de estado.' nome='Eplay' image={eplay} tecnologia1='REACT' tecnologia2='STYLED-COMPONENTS' tecnologia3='REDUX' />
       <Card href="https://contabilidadefortes.com.br/" button background="" descricao='Criação do site da Fortes contabilidade pela empresa junior Case da faculdade Femass onde atualmente sou o Diretor de projetos' nome='Site Fortes' image={fortes} tecnologia1='REACT' tecnologia2='STYLED-COMPONENTS' tecnologia3='REDUX' />
       </Container>
-      <a href="https://github.com/LeonardoMarins" target="_blank"><ButtonGithub>Visitar o Github</ButtonGithub></a>
+      <a href="https://github.com/LeonardoMarins" target="_blank"><ButtonGithub>Visitar o Github<img src={github} alt="icone github" /></ButtonGithub></a>
       </ContainerDiv>
     </>
   )

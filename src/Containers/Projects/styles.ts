@@ -35,6 +35,7 @@ height: 160px;
 
 export const ButtonGithub = styled.button`
   position: absolute;
+  display: flex;
   right: 24px;
   top: 24px;
   padding: 8px;
@@ -43,6 +44,12 @@ export const ButtonGithub = styled.button`
   border: none;
   color: #fff;
   border-radius: 5px;
+
+  img {
+    width: 16px;
+    height: 16px;
+    padding-left: 4px;
+  }
 
   &:hover {
     transition: 1s;
