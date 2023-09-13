@@ -64,7 +64,6 @@ Omit<
       font-family: 'Roboto', sans-serif;
       border: 1px solid #fff;
       padding: 5px;
-      background-color: gray;
       color: #fff;
     }
   }
