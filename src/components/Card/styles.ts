@@ -57,13 +57,13 @@ Omit<
   }
   ul {
     display: flex;
-    padding: 8px;
+    padding: 16px;
     li {
       margin-right: 8px;
       list-style: none;
       font-family: 'Roboto', sans-serif;
       border: 1px solid #fff;
-      padding: 5px;
+      padding: 4px;
       color: #fff;
     }
   }

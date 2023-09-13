@@ -17,7 +17,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-
   .titulo {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
@@ -26,8 +25,8 @@ export const Container = styled.div`
     background-clip: text; /* Esta propriedade aplica o gradiente ao texto */
     color: transparent;
   }
+`
 
-  `
 export const Avatar = styled.img`
 width: 160px;
 height: 160px;
@@ -48,13 +47,13 @@ export const ButtonGithub = styled.button`
   img {
     width: 16px;
     height: 16px;
-    padding-left: 4px;
   }
 
   &:hover {
     transition: 1s;
     padding: 12px;
   }
+
 `
 
 export const Voltar = styled.p`

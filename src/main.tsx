@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Projects from './Containers/Projects/index.tsx';
+import Curriculo from './Containers/Curriculo/index.tsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/projetos',
     element: <Projects />
+  },
+  {
+    path: '/curriculo',
+    element: <Curriculo />
   }
 ]);
 
