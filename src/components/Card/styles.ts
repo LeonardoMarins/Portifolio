@@ -71,14 +71,13 @@ Omit<
 
 
   button {
-    background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
     margin: 10px;
     padding: 8px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
+    color: black;
     display: block;
     cursor: pointer;
   }
